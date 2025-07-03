@@ -198,9 +198,9 @@ const CalendarView = () => {
 
   return (
     <div className="p-2 bg-white rounded shadow">
-      <div className="flex justify-between items-center mb-4 gap-2">
-        <button onClick={exportCSV} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Export CSV</button>
-        <button onClick={exportPDF} className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">Export PDF</button>
+      <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '1em' }}>
+        <button onClick={exportCSV} className="export-btn">Export CSV</button>
+        <button onClick={exportPDF} className="export-btn">Export PDF</button>
       </div>
       <Calendar
         localizer={localizer}
